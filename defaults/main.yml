@@ -35,7 +35,7 @@ lxc_container_vg_name: lxc
 # Default image to build from
 lxc_container_release: trusty
 lxc_container_user_name: ubuntu
-lxc_container_user_password: "{{ lookup('pipe', 'date --rfc-3339=ns | sha512sum | base64 | head -c 32') }}"
+lxc_container_user_password: "ubuntu"
 lxc_container_template_options: >
   --release {{ lxc_container_release }}
   --user {{ lxc_container_user_name }}
